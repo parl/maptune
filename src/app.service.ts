@@ -28,7 +28,7 @@ export class AppService implements OnApplicationBootstrap {
       // Option 1: Get a non-existent doc reference (less permission needed)
       const testDoc = this.firestore.collection('_system_health').doc('connection_test');
       await testDoc.get(); // Attempt the read
-      this.logger.log('Firestore connection test successful (attempted test doc read).');
+      this.logger.log('Firestore connection successful.');
 
       // Option 2: List collections (needs broader permissions)
       // const collections = await this.firestore.listCollections();

@@ -7,7 +7,10 @@ import { FirebaseModule } from './firebase/firebase.modul';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({ isGlobal: true }), // Make config global
+    ConfigModule.forRoot({ 
+      isGlobal: true,
+      envFilePath: '.env',
+    }), 
     FirebaseModule,
   ],
   controllers: [AppController],
