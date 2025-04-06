@@ -1,0 +1,2 @@
+export const FIREBASE_ADMIN = 'FIREBASE_ADMIN';
+export const FIRESTORE_DB = 'FIRESTORE_DB';
